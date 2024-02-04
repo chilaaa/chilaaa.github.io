@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff; /* Ubah warna background ke putih */
+  color: #000; /* Ubah warna teks ke hitam */
+  margin: 0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif !important;
+  box-sizing: border-box;
+}
+
+.movie-container {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.movie-container {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  padding: 5px 15px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.container {
+  perspective: 1000px;
+  /* margin: 5px 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kursi-container {
+  background-color: #f0f0f0; /* Ubah warna background sesuai keinginan */
+  padding: 10px 20px; /* Tambahkan padding agar kursi tidak langsung menempel pada tepi kontainer */
+  border-radius: 10px; /* Tambahkan border-radius untuk sudut yang lebih halus */
+}
+
+.kursi {
+  background-color: #fff;
+  height: 24px;
+  width: 30px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center; /* Menengahkan teks secara horizontal */
+  align-items: center; /* Menengahkan teks secara vertikal */
+}
+
+.terpilih {
+  background-color: black;
+  color: white;
+}
+.terpilih:hover {
+  background-color: black;
+  color: white;
+}
+.terisi {
+  background-color: grey;
+  color: white;
+}
+
+.kursi:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.kursi:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.kursi:not(.terisi):hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: black;
+  color: white;
+}
+
+.showcase .kursi:not(.terisi):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  width: 300px;
+  display: flex;
+  /* justify-content: space-between; */
+  list-style-type: none;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: black;
+  justify-content: center; /* Menengahkan teks secara horizontal */
+  align-items: center; /* Menengahkan teks secara vertikal */
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  background: #000; /* Ubah warna layar ke hitam */
+  height: 70px;
+  width: 300px;
+  /* margin: 0 10px; */
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  color: #fff; /* Ubah warna teks menjadi putih */
+  display: flex;
+  justify-content: center; /* Menengahkan teks secara horizontal */
+  align-items: center; /* Menengahkan teks secara vertikal */
+}
+
+p.text {
+  margin: 10px 0;
+}
+
+p.text span {
+  color: #0081cb;
+  font-weight: 600;
+  box-sizing: content-box;
+}
+
+.credits a {
+  color: #000; /* Ubah warna link ke hitam */
+}
+#date {
+  width: 300px;
+  margin-bottom: 5px; /* Berikan margin bawah */
+  background: rgba(0, 0, 0, 0.1); /* Warna latar belakang */
+  padding: 5px 10px; /* Padding */
+  border-radius: 5px; /* Border radius */
+  color: black; /* Warna teks */
+  border: none; /* Hilangkan border */
+  text-align: center; /* Menengahkan teks secara horizontal */
+  display: flex; /* Mengubah tata letak menjadi flexbox */
+  justify-content: center; /* Menengahkan teks secara horizontal */
+  align-items: center; /* Menengahkan teks secara vertikal */
+}
+#jam {
+  width: 300px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.1); /* Warna latar belakang */
+  padding: 5px 10px; /* Padding */
+  border-radius: 5px; /* Border radius */
+  color: black; /* Warna teks */
+  border: none; /* Hilangkan border */
+  text-align: center; /* Menengahkan teks secara horizontal */
+  display: flex; /* Mengubah tata letak menjadi flexbox */
+  justify-content: center; /* Menengahkan teks secara horizontal */
+  align-items: center; /* Menengahkan teks secara vertikal */
+}
+
+.yeye {
+  width: 800px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.1); /* Warna latar belakang */
+  padding: 5px 10px; /* Padding */
+  border-radius: 5px; /* Border radius */
+  color: black; /* Warna teks */
+  border: none; /* Hilangkan border */
+  text-align: center; /* Menengahkan teks secara horizontal */
+  /* display: flex; Mengubah tata letak menjadi flexbox */
+  justify-content: center; /* Menengahkan teks secara horizontal */
+  align-items: center; /* Menengahkan teks secara vertikal */
+}
+
+.nama {
+  width: 300px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.1); /* Warna latar belakang */
+  padding: 5px 10px; /* Padding */
+  border-radius: 5px; /* Border radius */
+  color: black; /* Warna teks */
+  border: none; /* Hilangkan border */
+  text-align: center; /* Menengahkan teks secara horizontal */
+  /* display: flex; Mengubah tata letak menjadi flexbox */
+  justify-content: center; /* Menengahkan teks secara horizontal */
+  align-items: center; /* Menengahkan teks secara vertikal */
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+#pesananTable th {
+  padding-left: 25px; /* Atur padding samping kiri */
+  padding-right: 25px; /* Atur padding samping kanan */
+}
+#pesananTable td {
+  padding-left: 25px; /* Atur padding samping kiri untuk sel data */
+  padding-right: 25px; /* Atur padding samping kanan untuk sel data */
+}
